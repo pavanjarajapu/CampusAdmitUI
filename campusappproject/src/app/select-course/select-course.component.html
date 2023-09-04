@@ -1,0 +1,35 @@
+<div class="register-card"><img class="profile-img-card" src="assets/img/stu.png" />
+    <p class="profile-name-card"></p>
+    <form [formGroup]="form" (ngSubmit)="submit()"  class="form-signup"><span class="reauth-email"></span>
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <input #Email formControlName="student_Id" type="number" class="form-control" id="student_Id" required placeholder="UserId" autofocus />
+                
+            </div>
+            <div class="col-md-6 form-group">
+                <input #Email formControlName="username" type="text" class="form-control" id="username" required placeholder="Username" autofocus />
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <input #Email formControlName="course_Id" type="number" class="form-control" id="course_Id" required placeholder="Course Id" autofocus />
+                
+            </div>
+            <div class="col-md-6 form-group">
+                <input #Email formControlName="course_Name" type="text" class="form-control" id="course_Name" required placeholder="Course Name" autofocus />
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <input #Email formControlName="course_fees" type="text" class="form-control" id="course_fees" required placeholder="Couse Fee" autofocus />
+            </div>
+                
+           
+        
+        
+        
+        <button class="btn btn-primary btn-block btn-lg btn-signup" type="submit"  >Select</button>
+        

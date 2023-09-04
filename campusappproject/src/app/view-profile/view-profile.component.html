@@ -1,0 +1,26 @@
+<div class="container">
+    <h1 class="text-center my-3">User Profile</h1>
+
+    <div class="login-card"><img class="profile-img-card" src="assets/img/profile1.png" />
+        <p class="profile-name-card"></p>
+        <div class="row">
+            <div class="col-md-6"><p class="text-center"><strong>ID:</strong> {{ user.student_Id }}</p></div> 
+            <div class="col-md-6"><p class="text-center"><strong>Username:</strong> {{ user.username }}</p></div>
+        </div>
+       
+        <div class="row">
+            <div class="col-md-6"><p class="text-center"><strong>Email:</strong> {{ user.email }}</p></div> 
+             <div class="col-md-6"><p class="text-center"><strong>Gender:</strong> {{ user.gender }}</p></div> 
+        </div>
+
+        <div class="row">
+             <div class="col-md-6"><p class="text-center"><strong>UserType:</strong> {{ user.usertype }}</p></div> 
+             <div class="col-md-6"><p class="text-center"><strong>Password:</strong> {{ user.password }}</p></div>
+        </div>
+        
+        <div class="row">
+             <div class="col-md-12"><p class="text-center my-2"><a class="btn btn-primary edit_profile_btn" routerLink="/edit-profile/{{student_Id}}">Edit Profile</a></p></div> 
+        </div>
+        
+    </div>
+</div>
